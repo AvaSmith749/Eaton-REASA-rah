@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>my index page</title>
+  <style>
+    body {
+      background: #f5b9c6;
+      color: #333;
+    } 
+    .container {  display: grid;
+  grid-template-columns: 300px 2fr 1fr;
+  grid-template-rows: 200px 1fr 100px;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer";
+    background: #f5b9c6;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+article { grid-area: main;
+background: rgb(172, 172, 234) }
+
+.left { grid-area: left; 
+background: rgb(172, 172, 234); }
+
+.right { grid-area: right; 
+  background: rgb(172, 172, 234); }
+
+header { grid-area: header; 
+background: rgb(172, 172, 234); }
+
+footer { grid-area: footer; 
+  background: rgb(172, 172, 234); }
+
+  h1 {color: #fff;}  
+  
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <article><h1>RAHHHHHH</h1></article>
+    <div class="left"><h1>Have you had an apple die before?</h1></div>
+    <div class="right"><h1>..where are my PANTS?!?!</h1></div>
+    <header><h1>Avas wacky doodolooo</h1></header>
+    <Footer><h1>thank for vist</h1></Footer>
+  </div>
+</body>
+
+</html>
